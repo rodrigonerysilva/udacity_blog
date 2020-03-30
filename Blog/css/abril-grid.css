@@ -1,0 +1,48 @@
+@media (min-width: 1001px) {
+	.container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: minmax(auto, auto);
+		grid-template-areas: "sh sh"
+							 "cta cta"
+							 "ft ft";
+		grid-gap: 1em;
+	}
+}
+
+.site-header {
+	grid-area: sh;
+}
+
+.container-top-article {
+	grid-area: cta;
+}
+
+
+
+@media (min-width: 1001px) {
+	.container-top-article-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: minmax(auto, auto);
+		grid-template-areas: "ctat ctat"
+							 "ctab ctas";
+		grid-gap: 1em;
+	}
+}
+
+.container-top-article-title-grid {
+	grid-area: ctat;
+}
+
+.container-top-article-bio-grid {
+	grid-area: ctab;
+}
+
+.container-top-article-social-grid {
+	grid-area: ctas;
+}
+
+.footer {
+	grid-area: ft;
+}
